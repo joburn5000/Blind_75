@@ -1,6 +1,7 @@
-            
-        
 """
+Two_Sum
+Difficulty: Easy
+
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -31,15 +32,25 @@ Constraints:
 -109 <= target <= 109
 Only one valid answer exists.
 
-Difficulty: Easy
 
 Completed: 3/25/2022
 
 """
 
 
+# Brute Force Method
+# Time Complexity: O(n^2)
 
-# Efficient method: Hash Map
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                if nums[i]+nums[j] == target:
+                    return [i,j]
+
+
+# Hash Map Method
+# Time Complexity: O(n)
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -49,15 +60,5 @@ class Solution:
             if remaining in seen:
                 return [i, seen[remaining]]
             seen[value] = i
-
-
-# Brute Force Method:
-
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
-                if nums[i]+nums[j] == target:
-                    return [i,j]
                   
       
