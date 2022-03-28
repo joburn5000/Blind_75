@@ -1,3 +1,5 @@
+Here are the solutions to the #blind75 challenge from leetcode
+
 From: 
 https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
 
