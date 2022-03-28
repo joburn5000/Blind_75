@@ -50,4 +50,15 @@ class Solution3:
         
         output = int(s[::-1],2) % 1024
         return output-1024 if negative else output
+    
+"""
+    
+Explanation:
+
+Solution 3 is an implementation of a 12 bit binary full adder. Inside the while loop, the sum s is calculated using 
+the least significant bits of a and b and the previous carry bit. Then we determine the next carry bit. Finally,
+we perform a right shift to get the next bit of a and b. After the while loop, the final carry bit is added.
+Then, if the two's complement number is negative, we return the negative version, else we return the positive version.
+
+"""
    
