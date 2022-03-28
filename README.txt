@@ -1,6 +1,3 @@
-Here are the solutions to the #blind75 challenge from leetcode
+Here are my solutions to the blind 75 challenge on leetcode
 
-From: 
 https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
-
-Hi folks, I found a list of Blind 75 Leetcode problems. Sharing it as I found it very useful. Happy Coding!
