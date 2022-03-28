@@ -52,6 +52,7 @@ class Solution:
 # Hash Map Method
 # Time Complexity: O(n)
 
+"""
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         seen = {}
@@ -60,5 +61,7 @@ class Solution:
             if remaining in seen:
                 return [i, seen[remaining]]
             seen[value] = i
+       
+"""
                   
       
