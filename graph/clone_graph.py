@@ -59,6 +59,7 @@ Completed: 5/13/2022
 
 class Solution:
     def cloneGraph(self, node: 'Node') -> 'Node':
+        if not node: return
         
         node_dict = {} # dictionary of nodes val to node
         
