@@ -36,7 +36,7 @@ Completed: 5/16/2022
 
 """
 
-# O(n) solution using numpy
+# O(n) time complexity using numpy
 
 import numpy as np
 
@@ -57,3 +57,48 @@ class Solution:
       
 # note: this solution is not "in-place" as it requires transforming the 
 #       data into an auxiliary data structure (numpy array)
+
+
+
+
+# O(1) space complexity: solution:
+
+class Solution:
+    def setZeroes(self, matrix: List[List[int]]) -> None:
+        is_col = False
+        rows = len(matrix)
+        cols = len(matrix[0])
+        
+        for i in range(rows):
+            if matrix[i][0] == 0:
+                is_col = True
+
+            for j in range(1,cols):
+                # if an element is 0, set corresponding row and column to 0
+                
+                if matrix[i][j] == 0:
+                    matrix[0][j] = 0
+                    matrix[i][0] = 0
+        
+        for i in range(1,rows):     
+            for j in range(1,cols):
+                if not matrix[i][0] or not matrix[0][j]:
+                    matrix[i][j] = 0                            # update elements
+        
+        if matrix[0][0] == 0:                                   # check first row
+            for j in range(cols):
+                matrix[0][j] = 0
+        
+        if is_col:                                              # check first column
+            for i in range(rows):
+                matrix[i][0] = 0
+"""
+Explanation:
+
+This algorithm uses row 0 and column 0 as storage variables, indicating whether there is
+a 0 in that row or column. Since there are n rows and n columns but only n+m-1 places in
+column 0 and row 0 combined, we use an extra variable, is_col, to store the final info.
+
+We use these placeholders to update the array in place, as shown by the comments.
+
+"""
