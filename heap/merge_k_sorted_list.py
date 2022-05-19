@@ -72,7 +72,7 @@ Explanation:
 
 After removing all the empty lists, we find the smallest value and add it to our new list.
 
-Time Complexity: O(KN) where N is the number of lists and K is the number of items in a list
+Time Complexity: O(KN) where K is the number of lists and N is the number of total items
 Space Complexity O(N)
 
 """
