@@ -24,6 +24,9 @@ Constraints:
 
 1 <= nums.length <= 105
 -104 <= nums[i] <= 104
+
+Difficulty: Medium
+Completed: 6/8/2022
 """
 
 # dp method:
