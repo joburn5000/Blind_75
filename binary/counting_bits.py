@@ -49,6 +49,20 @@ class Solution:
             
         return output
 
+"""
+Explanation:
+
+The numOnes function counts how many ones are in a digit. It does this by
+checking if the value is divisible by 2, then dividing the number by 2 until
+it reaches 1 or 0.
+
+We then call the numOnes function from 0 to n inclusive, summing the total
+number of ones in all of those digits.
+
+Time Complexity: O(N*log(N))
+Space Complexity: O(N)
+"""
+       
 # Faster Solution:
 
 class Solution:
@@ -60,4 +74,13 @@ class Solution:
         
         return ans
 
-      
+"""
+Explanation:
+
+We build an array from index 0 to index n that where ans[i] is the number of ones
+in ans[i]. The next value of such an array can be calculated using the previous
+values in the array, namely ans[i // 2] + i%2.
+
+Time Complexity: O(N)
+Space Complexity: O(N)
+"""     
