@@ -1,7 +1,4 @@
 """
-Two_Sum
-Difficulty: Easy
-
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -32,14 +29,12 @@ Constraints:
 -109 <= target <= 109
 Only one valid answer exists.
 
-
+Difficulty: Medium
 Completed: 3/25/2022
 
 """
 
-
-# Brute Force Method
-# Time Complexity: O(n^2)
+# Brute Force Method:
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -48,12 +43,18 @@ class Solution:
                 if nums[i]+nums[j] == target:
                     return [i,j]
 
-
-# Hash Map Method
-# Time Complexity: O(n)
-
 """
-class Solution:
+Explanation:
+
+We check all possible pairs and return the ones such that the values sum to the target.
+
+Time Complexity: O(N^2)
+Space Complexity: O(1)
+"""
+
+# Hash Map Method:
+
+class Solution2:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         seen = {}
         for i, value in enumerate(nums):
@@ -63,5 +64,11 @@ class Solution:
             seen[value] = i
        
 """
-                  
-      
+Explanation:
+
+We use a hash map to optimize the problem. If the remaining amount has been seen
+already, then we return the index i and where the index of the remaining value.
+
+Time Complexity: O(N)
+Space Complexity: O(N)
+"""
