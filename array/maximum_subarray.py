@@ -75,5 +75,5 @@ and start anew with the new value we have. this happens when temp_sum < 0 and te
 biggest sum gets updated if temp_sum is ever bigger than temp_sum
 
 Time Complexity: O(N)
-
+Space Complexity: O(1)
 """
