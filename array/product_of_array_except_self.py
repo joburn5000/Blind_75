@@ -34,3 +34,15 @@ class Solution:
         total = prod(nums)                                                          # total including the 0
         total_without_zero = prod([num for num in nums if num])                     # total excluding the 0 
         return [total_without_zero if not num else int(total/num) for num in nums]  # return non_zero total if num is 0, else return the total/that number
+
+"""
+Explanation:
+
+Of course, if there are 2 or more zeroes, the output array will be all zeros.
+Otherwise, we calculate the totals, both including and not including a zero.
+Then, return an array where each value is the total if num is 0, else the total 
+divided by that number.
+
+Time Complexity: O(N)
+Space Complexity: O(N)
+"""
