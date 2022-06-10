@@ -42,5 +42,12 @@ class Solution:
                     profit = difference
         return profit
       
-# Time Complexity: O(n)
-# Space Complexity: O(1)
+"""
+Explanation:
+
+We go through and find the biggest difference between two stocks, provided
+that the smaller one happens before the bigger one.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+"""
