@@ -38,3 +38,13 @@ class Solution:
                 ones +=1  # increment count if not divisible by 2
             n = int(n/2)  # right shift
         return ones
+       
+"""
+Explanation:
+
+If the number is not evenly divisible by 2, it has a 1. At every stage, check if it's divisible. 
+If so, add 1 to a total, then divide the number by 2 until the number reaches 0.
+
+Time Complexity: O(log(N))
+Space Complexity: O(1)
+"""
