@@ -42,4 +42,5 @@ class Solution:
                     profit = difference
         return profit
       
-# Time complexity: O(n)
+# Time Complexity: O(n)
+# Space Complexity: O(1)
