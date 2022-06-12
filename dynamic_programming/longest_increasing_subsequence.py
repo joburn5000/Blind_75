@@ -2,7 +2,9 @@
 
 Given an integer array nums, return the length of the longest strictly increasing subsequence.
 
-A subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements. For example, [3,6,2,7] is a subsequence of the array [0,3,1,6,2,2,7].
+A subsequence is a sequence that can be derived from an array by deleting some or no elements 
+without changing the order of the remaining elements. For example, [3,6,2,7] is a subsequence 
+of the array [0,3,1,6,2,2,7].
 
  
 
@@ -40,4 +42,16 @@ class Solution:
                     dp[i] = max(dp[i], dp[j] + 1)
         return max(dp)
 
-# Time Complexity: O(n^2)
+"""
+Explanation:
+
+We use a dp array that is initialized at 1 for every index. Then we 
+calculate each index by finding if there are any values before it that
+are smaller than the value at index i. If so, then we make dp[i] the
+maximum between its previous value and dp[j] + 1 where j is the index of
+the value where nums[j] < nums[i]. In the end, we return the maxiumum
+value of our dp matrix.
+
+Time Complexity: O(N^2)
+Space Complexity: O(N)
+"""
