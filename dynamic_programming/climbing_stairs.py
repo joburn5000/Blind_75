@@ -60,5 +60,14 @@ class Solution:
     def climbStairs(self, n: int) -> int:
         return self.fibonacci(n)
     
- 
+"""
+Explanation:
+
+The best way to complete this problem is recognizing the fibonaci pattern.
+It just so happens that the stairs problem is the same as the nth fibonaci
+sequence. This happens because it is cumulative on the previous 2 solutions.
+
+Time Complexity: O(N)
+Space Conplexity: O(1)
             
+"""
