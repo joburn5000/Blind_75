@@ -47,3 +47,13 @@ class Solution:
         output = recursion(amount, {})          # perform recursion
         if output > 10000: return -1            # if case is impossible, it will be an impossbly high number
         else: return output
+        
+"""
+Explanation:
+
+We recursively find the smallest number of coins, using a cache system
+to eliminate repetitions in the calculations.
+
+Time Complexity: O(N*M)
+Space Complexity: O(M)
+"""
