@@ -62,4 +62,5 @@ We use dynamic programming to store the values in array dp where dp[i][j] is the
 common subsequence for text1 from index 0 to i and text2 from 0 to j
 
 Time Complexity: O(N*M)
+Space Complexity: O(N*M)
 """
