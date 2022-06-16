@@ -73,3 +73,12 @@ class Solution:
                     results.append([i,j])
         
         return results
+"""
+Explanation:
+
+We use the recursive function path_available to check whther each and every
+cell can reach both the Atlantic and Pacific ocean.
+
+Time Complexity: O(N)
+Space Complexity: O(N)
+"""
