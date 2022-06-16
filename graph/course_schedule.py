@@ -68,4 +68,5 @@ The list "checked" gets updated every time we check a new course. This avoids ch
 
 Time Complexity: O(N)
 Space Complexity: O(N)
+
 """
