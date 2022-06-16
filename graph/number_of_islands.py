@@ -66,5 +66,6 @@ When we find a piece of land, we increment the count and "sink" the whole island
 by changing all neighboring "1"s to "0"s recursively. We then continue the search
 for each remaining grid.
 
-
+Time Complexity: O(N)
+Space Complexity: O(1) 
 """
