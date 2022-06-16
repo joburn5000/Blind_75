@@ -67,4 +67,5 @@ appears as a prerequisite, then we know there is a loop in the courses, so we im
 The list "checked" gets updated every time we check a new course. This avoids checking the same course more than once.
 
 Time Complexity: O(N)
+Space Complexity: O(N)
 """
