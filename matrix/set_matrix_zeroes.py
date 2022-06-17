@@ -36,7 +36,7 @@ Completed: 5/17/2022
 
 """
 
-# O(n) time complexity using numpy
+# numpy solution:
 
 import numpy as np
 
@@ -54,14 +54,23 @@ class Solution:
                 matrix[:,i % cols] = 0
                 
         return matrix
-      
-# note: this solution is not "in-place" as it requires transforming the 
-#       data into an auxiliary data structure (numpy array)
+
+       """
+Explanation:
+
+We transform the data into a numpy array, where we
+can easily check whether 0 is found in the row or
+column for all the rows and columns.
+
+note: this solution is not "in-place" as it requires 
+transforming the data into an auxiliary data structure
+
+Time Complexity: O(N)
+Space Complexity: O(N)
+"""
 
 
-
-
-# O(1) space complexity: solution:
+# O(1) space complexity solution:
 
 class Solution:
     def setZeroes(self, matrix: List[List[int]]) -> None:
@@ -101,4 +110,6 @@ column 0 and row 0 combined, we use an extra variable, is_col, to store the fina
 
 We use these placeholders to update the array in place, as shown by the comments.
 
+Time Complexity: O(N)
+Space Complexity: O(1)
 """
