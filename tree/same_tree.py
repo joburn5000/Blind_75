@@ -43,5 +43,15 @@ class Solution:
         if p.val != q.val: return False   # neither node is "null" so check values
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)  # check both children
 
-# Time Complexity: O(N)
-# Space Complexity: O(log(N)) best case for a balanced tree, O(N) worst case for an unbalanced tree
+"""
+Explanation:
+
+We recursively check for any difference between the two trees.
+
+The base case: both nodes are "null" and they are the same.
+If one is different from the other, return False. If the values
+are the same, we check the left and the right sub-trees.
+
+Time Complexity: O(N)
+Space Complexity: O(log(N)) best case for a balanced tree, O(N) worst case for an unbalanced tree
+"""
