@@ -46,3 +46,11 @@ class Solution:
 
         return root
         
+"""
+Explanation:
+
+We recursively swap the left and the right children for every node.
+
+Time Complexity: O(N)
+Space Complexity: O(N)
+"""
