@@ -61,6 +61,6 @@ to remove everything including and before that repeated letter,
 because there is no unchecked substring that could be larger using
 that letter.
 
-Time complexity: O(n)
-
+Time Complexity: O(N)
+Space Complexity: O(N)
 """
