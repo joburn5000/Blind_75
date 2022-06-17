@@ -53,7 +53,15 @@ class Solution:
             curr_node = curr_node.next
             
         return head
-      
+"""
+Explanation:
+
+We make a list containing all the values, then change the values
+of the original list.
+
+Time Complexity: O(N)
+Space Complexity: O(N)
+"""
 # recursion:
 
 class Solution2:
@@ -70,3 +78,12 @@ class Solution2:
             return recursion(temp, curr)    # recursion: reverse the next node
         
         return recursion(head, None)
+"""
+Explanation:
+
+We recursively reverse the order by making the next node
+the previous node.
+
+Time Complexity: O(N)
+Space Complexity: O(N)
+"""
