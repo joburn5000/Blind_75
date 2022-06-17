@@ -48,3 +48,15 @@ class Solution:
         recurse(root)
         
         return output[0]
+"""
+Explanation:
+
+At any level, the maximum possible sum is the either just the center val,
+the center val + right max sum, the center val + left max sum, or the 
+center val + right max sum + left max sum.
+
+We recursively check all these possibilities, and output the highest.
+
+Time Complexity: O(N)
+Space Complexity: O(N)
+"""
