@@ -29,11 +29,15 @@ Completed: 5/18/2022
 
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        def recurse(root, num):
-            if not root: return num                                                   # base case: null node
-            else: return max(recurse(root.left, num+1), recurse(root.right,num+1))    # recursion step: choose max length beween right and left
-        return recurse(root, 0)
+        if not root: return 0                                                         # base case: null node
+        else: return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))     # recursion step: choose max length beween right and left
+     
 """
-Explanation: BFS Recursion (see comments)
+Explanation: 
 
+We use BFS recursion, choosing to return 1 plus the greater value of the left depth
+and the right depth for every non-NULL root
+
+Time Complexity: O(N)
+Space Complexity: O(1)
 """
