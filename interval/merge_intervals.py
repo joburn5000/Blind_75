@@ -38,3 +38,12 @@ class Solution:
                 merged[-1][1] = max(merged[-1][1], interval[1]) # overlapping, so change the ending value in the interval
                 
         return merged
+"""
+Explanation:
+
+We go through the (sorted) intervals, and if there is an overlap, we
+merge the intervals by changing the ending value of the interval with
+the smaller start time.
+
+Time Complexity: O(N)
+Space Complexity: O(N)
