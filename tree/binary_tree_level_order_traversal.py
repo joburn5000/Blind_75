@@ -23,7 +23,7 @@ Constraints:
 The number of nodes in the tree is in the range [0, 2000].
 -1000 <= Node.val <= 1000
 
-Difficulty: Medium
+Difficulty: Easy
 Completed: 6/21/2022
 """
 
