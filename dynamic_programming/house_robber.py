@@ -55,6 +55,9 @@ keeping track of how much money each house could gain, including
 all the houses to its left. We calculate the max amount of money
 for a new house, and then shift all the values to the left.
 
+After looping through all the nums, the total will be the bigger
+between the last and second-to-last house.
+
 Time Complexity: O(N)
-Space Complexity: O()
+Space Complexity: O(1)
 """
