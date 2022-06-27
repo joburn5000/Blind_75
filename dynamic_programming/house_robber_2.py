@@ -35,7 +35,7 @@ Constraints:
 0 <= nums[i] <= 1000
 
 Difficulty: Medium
-Completed: 
+Completed: 6/27/2022
 """
 
 class Solution:
